@@ -33,7 +33,7 @@ ENV/
 *.h5
 *.pkl
 *.joblib
-
+/data
 # Model files
 *.pt
 *.pth
