@@ -40,43 +40,16 @@ JetBrains IDEs (PyCharm, IntelliJ, etc.)
 .idea/
 
 -----------------
-4. Data, Models, and Large Artifacts (ML Specific)
------------------
-Datasets (should be stored externally, not in Git)
-data/
-datasets/
-*.csv
-*.tsv
-*.parquet
-*.zip
-*.tar.gz
 
-Output results, reports, and generated figures
-results/
-figures/
-output/
-
-Trained Models and Checkpoints (often large)
-*.pkl
-*.joblib
-*.h5
-*.pth
-*.pt
-*.onnx
-*.weights
-tf_logs/
-checkpoints/
-saved_models/
-model_weights/
 
 -----------------
-5. Notebook Files
+4. Notebook Files
 -----------------
 Jupyter Notebook Checkpoints
 .ipynb_checkpoints/
 
 -----------------
-6. Environment Variables and Secrets
+5. Environment Variables and Secrets
 -----------------
 Never commit credentials or local configurations!
 .env
