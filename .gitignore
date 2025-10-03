@@ -1,58 +1,75 @@
-/senvenv
-===============================================
-Python ML Project .gitignore
-===============================================
------------------
-1. Byte-compiled, Caching, and Build Artifacts
------------------
-*.pyc
-pycache/
-*.o
+# Python
+__pycache__/
+*.py[cod]
 *.so
 *.egg
 *.egg-info/
-build/
 dist/
-.coverage
-.cache/
-.pytest_cache/
+build/
+*.log
 
------------------
-2. Virtual Environments
------------------
-Python virtual environment directories
-venv/
+# Jupyter Notebooks
+.ipynb_checkpoints
+
+# Virtual environments
+.env/
 .venv/
+env/
+venv/
+ENV/
+*.env
 
------------------
-3. IDE and System Files
------------------
-macOS system files
+# Data files
+*.csv
+*.tsv
+*.dat
+*.data
+*.json
+*.xlsx
+*.xls
+*.db
+*.sqlite
+*.h5
+*.pkl
+*.joblib
+
+# Model files
+*.pt
+*.pth
+*.ckpt
+*.pb
+*.tflite
+*.onnx
+
+# TensorBoard logs
+runs/
+logs/
+events.out.tfevents.*
+
+# MLflow
+mlruns/
+
+# Weights & Biases
+wandb/
+
+# DVC cache
+.dvc/
+*.dvc
+
+# Docker
+*.pid
+*.pid.lock
+
+# System files
 .DS_Store
-
-Windows system files
 Thumbs.db
 
-VS Code IDE files
+# VSCode
 .vscode/
 
-JetBrains IDEs (PyCharm, IntelliJ, etc.)
-.idea/
+# Spyder
+.spyproject/
 
------------------
-
-
------------------
-4. Notebook Files
------------------
-Jupyter Notebook Checkpoints
-.ipynb_checkpoints/
-
------------------
-5. Environment Variables and Secrets
------------------
-Never commit credentials or local configurations!
-.env
-.env.local
-config.local.json
-secrets.yaml
+# Others
+*.bak
+*.tmp
